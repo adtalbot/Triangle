@@ -1,0 +1,16 @@
+<h1>The results:</h1>
+
+<h5>Side 1: <%= @triangle.side_one() %></h5>
+<h5>Side 2: <%= @triangle.side_two() %></h5>
+<h5>Side 3: <%= @triangle.side_three() %></h5>
+
+<% if @triangle.equilateral? %>
+  <h5>Your triangle is equilateral</h5>
+<% elsif @triangle.isosceles? %>
+  <h5>Your triangle is isosceles</h5>
+<% elsif @triangle.scalene? %>
+  <h5>Your triangle is scalene</h5>
+<% else %>
+  <h5>This is not a triangle</h5>
+<% end %>
+
